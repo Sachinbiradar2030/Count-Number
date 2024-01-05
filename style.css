@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+ background-image:repeating-linear-gradient(red,gold);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+button{
+    padding: 5px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #4b4470;
+    border-radius: 2px;
+    border: none;
+
+}
+button:hover{
+    background-color: #100060; 
+    cursor: pointer;
+    /* transform: rotate(20deg); */
+    transform: skew(-10deg);
+  
+   
+}
+
+#dispayvalue{
+    font-size: 20px;
+    padding: 5px 15px;
+    border: 1px solid black;
+}
+@media(max-width:397px){
+    
+    button{
+    padding: 4px 10px;
+    font-size: 15px;
+  
+
+}
+#dispayvalue{
+    font-size: 15px;
+    padding: 4px 10px;
+   
+}
+}
+@media (max-width:292px) {
+    button{
+    padding: 5px 4px;
+    }
+    #dispayvalue{
+    font-size: 15px;
+    padding: 5px 4px;
+    }
+}
